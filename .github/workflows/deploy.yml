@@ -39,8 +39,3 @@ jobs:
         --set imagePullPolicy=Always 
         --set host=${{ secrets.IP_ADDRESS }} 
         --set protocol=http './deploy/k8s/helm-simple/coupon'
-
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
